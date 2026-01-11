@@ -121,3 +121,8 @@ function calculateStats() {
 }
 
 paragraphBox.innerText = "Press Start button to begin...";
+
+
+
+
+

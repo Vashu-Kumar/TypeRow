@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: #2b0404;
+    text-align: center;
+}
+
+#game {
+    background-color: rgba(184, 248, 200, 0.8);
+    min-width: 40vw;
+    max-width: 60vw;
+    padding: 5px;
+    align-self: center;
+    border-radius: 0.7rem;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2rem;
+}
+
+#stats_Container {
+    width: fit-content;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    text-align: center;
+    align-self: center;
+    justify-items: center;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(79, 69, 87);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#start_btn {
+    margin: 12px;
+    padding: 8px;
+    height: 36px;
+    width: 64px;
+    border: 0;
+    font-size: 14px;
+    border-radius: 5px;
+
+}
+
+#start_btn:hover {
+    cursor: pointer;
+}
+
+.word {
+    display: inline-block;
+    font-family: 'Courier New', monospace;
+    margin: 0 5px;
+}
+
+#game {
+    line-height: 30px;
+    height: 105px;
+    overflow: hidden;
+    text-align: left;
+}
+
+#words {
+    position: relative;
+    filter: blur(5px);
+}
+
+#game:focus #words {
+    filter: blur(0);
+}
+
+#focus-error {
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    padding-top: 35px;
+    ;
+}
+
+#game:focus #focus-error {
+    display: none;
+}
+
+.char.correct {
+    color: #fff;
+}
+
+.char.incorrect {
+    color: rgb(238, 11, 11);
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#cursor {
+    display: none;
+    width: 2px;
+    height: 1.2rem;
+    background: rgba(250, 249, 250, 0.8);
+    position: fixed;
+    top: 150px;
+    left: 180px;
+    animation: blink 0.3s infinite;
+}
+
+#game:focus #cursor{
+    display: block;
+}
+
+#game:focus {
+    outline: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #acc_con, #time_con, wpm_con {
+  background-color: rgb(109, 93, 110);
+  width: 100%; 
+  margin: 10px;
+  border-radius: 5px;
+  color: rgb(244, 238, 224);
+  padding-top: 20px;
+  font-family: JetBrains Mono;
+  font-weight: bold;
+} */
+/* 
+#wpm_con, #time_con #acc_con {
+  height: 85%;
+  padding: 20px; 
+  padding-top: 20px;
+  font-size: 5rem;  
+} */
