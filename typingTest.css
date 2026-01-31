@@ -5,9 +5,7 @@
 }
 
 body {
-    /* background-color: #333; */
     background-color: #1e1e2f;
-    /* color: #2b0404; */
     color: #eaeaf0;
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
@@ -18,18 +16,12 @@ body {
     min-width: 40vw;
     max-width: 60vw;
     padding: 6px;
-    /* align-self: center; */
-    /* border-radius: 0.7rem; */
     border-radius: 12px;
     position: relative;
-    /* margin: auto; */
     margin: 100px auto 0;
     overflow: hidden;
     outline: none;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2rem; */
 }
 
 #words {
@@ -48,25 +40,19 @@ body {
 }
 
 .char.correct {
-    /* color: #fff; */
     color: #06075c;
 }
 
 .char.incorrect {
-    /* color: rgb(238, 11, 11); */
     color: #dc2626;
 }
 
 #cursor {
     display: none;
     width: 2px;
-    height: 1.2rem;
-    /* background: rgba(250, 249, 250, 0.8); */
+    height: 1rem;
     background: #111827;
-    /* position: fixed; */
     position: absolute;
-    top: 150px;
-    left: 180px;
     animation: blink 0.3s infinite;
     transition: top 0.05s linear, left 0.05s linear;
 }
@@ -154,22 +140,3 @@ body {
 #game.over #focus-error {
     display: none;
 }
-
-
-/* #acc_con, #time_con, wpm_con {
-  background-color: rgb(109, 93, 110);
-  width: 100%; 
-  margin: 10px;
-  border-radius: 5px;
-  color: rgb(244, 238, 224);
-  padding-top: 20px;
-  font-family: JetBrains Mono;
-  font-weight: bold;
-} */
-/* 
-#wpm_con, #time_con #acc_con {
-  height: 85%;
-  padding: 20px; 
-  padding-top: 20px;
-  font-size: 5rem;  
-} */
